@@ -1,0 +1,13 @@
+Your System (Application) → initiates DNS and network request
+
+DNS Resolver (172.31.0.2) → resolves google.com to IP
+
+AWS VPC Gateway (172.31.32.1) → forwards traffic out of your subnet
+
+AWS Network (Internal Routers) → routes traffic to the internet
+
+Internet Backbone (ISPs/IXPs) → carries traffic globally
+
+Google Edge Network (142.251.x.x) → receives traffic at nearest Google data center
+
+Google Server (bh-in-f101.1e100.net) → serves the response

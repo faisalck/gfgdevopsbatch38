@@ -1,0 +1,14 @@
+sudo systemctl status crond
+sudo systemctl start crond
+sudo systemctl enable crond
+
+mkdir -p ~/.cache
+chmod +x /home/ec2-user/a.sh
+
+crontab -e
+* * * * * /home/ec2-user/a.sh >> /home/ec2-user/a.log 2>&1
+
+a.sh
+#!/bin/bash
+echo "hello" world"
+echo "$(date): Cron job executed"

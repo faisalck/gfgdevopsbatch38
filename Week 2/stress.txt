@@ -1,0 +1,7 @@
+sudo yum install -y stress  # For Amazon Linux
+# or
+sudo apt install -y stress  # For Ubuntu
+
+stress --cpu 4 --timeout 300
+
+

@@ -1,0 +1,10 @@
+https://aws.amazon.com/about-aws/global-infrastructure/
+https://aws.amazon.com/lambda/edge/
+
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-cloudfront-trigger-events.html
+
+https://aws.amazon.com/fr/ec2/instance-types/
+
+https://calculator.aws/
+https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html

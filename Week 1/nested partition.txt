@@ -1,0 +1,44 @@
+sudo lvm version
+clear
+sudo fdisk /dev/sdb
+clear
+lsblk
+
+sudo fdisk /dev/xvdf
+Press n to create new partition
+Just press Enter (to accept the default p for primary).
+Accept the default partition number (should be 1) → press Enter.
+Accept the default first sector → press Enter.
+Accept the default last sector (uses full disk) → press Enter.
+Now type t to change the partition type.
+Type 8e → press Enter (this sets it to Linux LVM).
+Type p to verify — it should say Linux LVM.
+Finally, type w to write the partition table.
+
+lsblk
+sudo pvcreate /dev/xvdf1
+sudo pvs
+sudo vgcreate my_vg /dev/xvdf1
+sudo vgs
+sudo lvcreate -L 5G -n lv_data my_vg
+sudo lvs
+sudo mkfs.ext4 /dev/my_vg/lv_data
+sudo mkdir /mnt/lv_data
+sudo mount /dev/my_vg/lv_data /mnt/lv_data
+lsblk
+
+
+ubuntu@ip-172-31-88-248:~$ lsblk
+NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0               7:0    0 27.2M  1 loop /snap/amazon-ssm-agent/11320
+loop1               7:1    0 73.9M  1 loop /snap/core22/1981
+loop2               7:2    0 50.9M  1 loop /snap/snapd/24505
+xvda              202:0    0    8G  0 disk 
+├─xvda1           202:1    0    7G  0 part /
+├─xvda14          202:14   0    4M  0 part 
+├─xvda15          202:15   0  106M  0 part /boot/efi
+└─xvda16          259:0    0  913M  0 part /boot
+xvdf              202:80   0   10G  0 disk 
+└─xvdf1           202:81   0   10G  0 part 
+  └─my_vg-lv_data 252:0    0    5G  0 lvm  /mnt/lv_data
+

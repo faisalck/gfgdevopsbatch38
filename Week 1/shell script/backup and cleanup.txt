@@ -1,0 +1,14 @@
+[ec2-user@ip-172-31-41-0 ~]$ cat backup.sh
+#!/bin/bash
+tar -czvf /home/ec2-user/backup/backup_$(date +%Y%m%d_%H%M%S).tar.gz /home/ec2-user/data
+
+[ec2-user@ip-172-31-41-0 ~]$ cat cleanup.sh
+#!/bin/bash
+find "/home/ec2-user/backup/" -type f -mmin +3 -exec rm {} \;
+
+chmod +x /home/ec2-user/backup.sh
+chmod +x /home/ec2-user/cleanup.sh
+
+crontab -e
+* * * * * /home/ec2-user/backup.sh
+* * * * * /home/ec2-user/cleanup.sh
