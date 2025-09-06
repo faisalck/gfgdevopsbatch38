@@ -8,3 +8,13 @@ https://aws.amazon.com/fr/ec2/instance-types/
 https://calculator.aws/
 https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html
+
+
+https://www.geeksforgeeks.org/linux-unix/linux-stress-command-with-examples/
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/tutorial-ec2-auto-scaling-load-balancer.html
+https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html
+https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html
+
+https://aws.amazon.com/blogs/aws/amazon-route-53-application-recovery-controller/
+
+https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html
