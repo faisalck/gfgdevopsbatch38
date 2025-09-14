@@ -1,2 +1,3 @@
 https://github.com/github/gitignore
 https://readme.so/editor
+https://git-scm.com/downloads
