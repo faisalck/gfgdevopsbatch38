@@ -27,6 +27,3 @@ Run the container and ensure the scripts can be executed inside it.
 
 
 -----------------
-
-
-Sonarqube
