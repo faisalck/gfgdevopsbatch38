@@ -1,0 +1,7 @@
+docker volume create gfgbatch38data
+
+# named volume
+docker run -it -v gfgbatch38data:/application -p 8080:5001 flasksqlapp
+
+# annonymous volume
+docker run -it -v :/application -p 8080:5001 flasksqlapp

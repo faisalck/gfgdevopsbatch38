@@ -9,3 +9,6 @@ services:
 
 # docker build -t flaskcontainer .
 # docker run -it -p 5001:5001 flaskcontainer
+# docker network create mynetwork
+# docker run -d --network mynetwork --name redis redis
+# docker run -d --network mynetwork -p 5001:5001 --name flaskcontainer flaskcontainer

@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:alpine3.21
 COPY . /application
 WORKDIR /application
 COPY req.txt .
