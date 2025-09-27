@@ -6,11 +6,11 @@ import os
 app = Flask(__name__)
 
 # AWS RDS database configuration
-RDS_HOST = 'database1.cakxb5zzw0ie.us-east-1.rds.amazonaws.com'
+RDS_HOST = 'database-1.cakxb5zzw0ie.us-east-1.rds.amazonaws.com'
 RDS_PORT = '5432'
 DB_NAME = 'database1'
 DB_USER = 'postgres'
-DB_PASSWORD = 'pranjal123'
+DB_PASSWORD = 'pranjal1'
 
 # Establish connection to AWS RDS PostgreSQL database
 def get_db_connection():
